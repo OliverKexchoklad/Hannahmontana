@@ -3,25 +3,32 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     margin: 0;
-    font-family: sans-serif;
-    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+background: linear-gradient(135deg, #b873f0 0%, #ff8cda 100%);
+background-attachment: fixed;
     color: #333333;
 }
 
 header {
     padding: 40px 60px;
+    display: flex; justify-content: center;
 }
 
 .huvudmeny {
-    border: 1px solid #000000;
-    padding: 0;
+ background-color: #ffffff;
+ box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+ border-radius: 15px;
+ width: 100%;
+ max-width: 1000px;
+ overflow: hidden;
 }
 
 .huvudmeny ul {
     list-style: none;
     margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     text-align: center;
     align-items: center;
 }
@@ -31,7 +38,125 @@ header {
 }
 
 .huvudmeny a {
+  display: block;
+    padding: 15px 10px;
+    margin: 6px;
+    border-radius: 12px;
     text-decoration: none;
-    color: #333333;
-    font-size: 18px;
+    color: #555555;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.global-menu a:hover, .huvudmeny a.active {
+    background-color: #db4bf1; 
+    color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+main > img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    border: 4px solid white;
+}
+
+main section, 
+main article {
+background-color: rgba(255, 255, 255, 0.85);
+padding: 40px 50px;
+border-radius: 20px;
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+max-width: 800px;
+width: 100%;
+box-sizing: border-box;
+border: 2px solid rgba(255, 255, 255, 1);
+margin-bottom: 40px;
+text-align: left;
+}
+
+main section h2, 
+main article h2 {
+    font-family: 'Pacifico', cursive;
+    color: #8a2be2;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+footer {
+ background-color: #222222;
+    color: #ffffff;
+    padding: 40px 20px;
+    border-top: 5px solid #ff8cda; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h4 {
+    font-family: 'Pacifico', cursive;
+    color: #ff8cda; 
+    font-size: 22px;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+
+footer p {
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 1.5;
+}
+
+footer ul {
+    list-style: none; /* Tar bort prickarna */
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #b873f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+footer a:hover, 
+footer a:focus {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr; 
+        gap: 40px; 
+    }
 }
