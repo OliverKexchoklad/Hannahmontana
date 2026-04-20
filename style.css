@@ -162,3 +162,75 @@ footer a:focus {
         gap: 40px; 
     }
 }
+
+main > nav {
+    margin-bottom: 40px;
+}
+
+main > nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main > nav a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #8a2be2;
+    padding: 10px 25px;
+    border-radius: 50px; 
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+main > nav a:hover {
+    background-color: #ff8cda;
+    color: white;
+    transform: translateY(-3px); 
+}
+
+ain table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+main th, 
+main td {
+    padding: 15px;
+    text-align: left;
+}
+
+main th {
+    background-color: #8a2be2;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+main td {
+    color: #444;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+main tbody tr:nth-child(even) {
+    background-color: rgba(138, 43, 226, 0.05); 
+}
+
+
+main tbody tr:hover {
+    background-color: rgba(255, 140, 218, 0.15);
+}
