@@ -234,3 +234,32 @@ main tbody tr:nth-child(even) {
 main tbody tr:hover {
     background-color: rgba(255, 140, 218, 0.15);
 }
+
+main iframe {
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadown: 0 10px 20px rgba(0,0,0,0,15);
+}
+
+.scrolling-ticker {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticker-text {
+    display:inline-block;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+}
