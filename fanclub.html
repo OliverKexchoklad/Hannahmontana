@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Hannah Montana Club</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+    <header>
+        <nav class="huvudmeny">
+            <ul>
+                <li><a href="hem.html">Hem</a></li>
+                <li><a href="om.html">Om<br>Hannah</a></li>
+                <li><a href="musik.html">Musik</a></li>
+                <li><a href="konserter.html">Konserter</a></li>
+                <li><a href="fanclub.html" class="active">Fanclub</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bli VIP-medlem i Fancluben! 💖</h2>
+               <p>Skriv upp dig nedan för att få exklusiva uppdateringar, förtur till biljetter och chansen att vinna en meet & greet med Hannah!
+               </p>
+
+               <form action="#" method="post">
+
+                <div class="form">
+                    <label for="fname">Förnamn:</label>
+                    <input type="text" id="fname" name="fname" placeholder="T.ex. Miley" required>
+                </div>
+                <div class="form">
+                    <label for="lname">Efternamn:</label>
+                    <input type="text" id="lname" name="lname" placeholder="T.ex. Stewert" required>
+                </div>
+
+                <div class="form">
+                    <label for="email">Epostaddress</label>
+                    <input type="email" id="email" name="email" placeholder="hannah.fan@example.com" required>
+                </div>
+
+                <div class="form">
+                    <label for="password">Välj ett lösenord:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form">
+                    <label for="bday">Födelsedatum</label>
+                    <input type="date" id="bday" name="bday">
+                </div>
+
+                <div class="form">
+                    <label for="fav-song">Vilken är din favoritlåt?</label>
+                    <select id="fav-song" name="fav-song">
+                        <option value="bestofboth">The Best of Both Worlds</option>
+                        <option value="nobodysperfect">Nobody's Perfect</option>
+                        <option value="rockstar">Rock Star</option>
+                        <option value="7things">7 things</option>
+                    </select>
+                </div>
+
+                <div class="form radio">
+                    <p>Vem relaterar du mest till?</p>
+                    <input type="radio" id=relate-miley" name="relate" value="Miley">
+                    <label for="relate-miley">Miley (Vanlig tjej)</label><br>
+
+                    <input type="radio" id="relate-hannah" name="relate" value="Hannah">
+                    <label for="relate-hannah">Hannah (Popstjärna)</label>
+                </div>
+
+                <div class="form">
+                    <label for="message">Varför är du det största fanet? (Frivilligt)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Berätta för oss..."></textarea>
+                </div>
+
+                <div class="form check">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter" class="check-label">Ja, jag vill ha VIP-nyhetsbrevet!</label>
+                </div>
+
+                <button type="submit">Gå med i Fancluben ✨</button>
+               </form>
+        </section>
+    </main>
+
+    <footer>
+    <div>
+        <h4>Hannah Montana Fanclub</h4>
+        <p>&copy; 2026 Skolprojekt. Alla rättigheter reserverade.</p>
+    </div>
+
+    <div>
+        <h4>Snabblänkar</h4>
+        <ul>
+            <li><a href="om.html">Om<br>Hannah</a></li>
+                <li><a href="mailto:hannah@example.com">Kontakta oss</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Följ Hannah</h4>
+        <ul>
+            <li><a href="https://www.instagram.com/hannahmontanastagram/" target="_blank">Instagram</a></li>
+            <li><a href="tiktok.com">TikTok</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+    </html>

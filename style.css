@@ -262,3 +262,91 @@ main iframe {
     0% { transform: translateX(100vw); }
     100% { transform: translateX(-100%); }
 }
+
+main form {
+    margin-top: 30px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+main label {
+    display: block;
+    font-weight: bold;
+    color: #8a2be2;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main input[type="text"],
+main input[type="email"],
+main input[type="password"],
+main input[type="date"],
+main select,
+main textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eeeeee;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+main input:focus,
+main textarea:focus,
+main select:focus {
+    border-color: #ff8cda;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255,140,218,0.4);
+}
+
+main input::placeholder,
+main textarea::placeholder {
+    color: #bbbbbb;
+    font-style: italic;
+}
+
+.radio p {
+    font-weight: bold;
+    color: #8a2be2;
+    margin-bottom: 10px;
+}
+
+.radio label,
+.check label {
+    display: inline;
+    color: #444;
+    font-weight: normal;
+}
+
+main input[type="checkbox"]:checked + label.check-label {
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+main button[type="submit"] {
+    background-color: hsl(280, 80%, 60%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+main button[type="submit"]:hover {
+    background-color: hsl(320, 100%, 75%);
+    transform: scale(1.02);
+}
