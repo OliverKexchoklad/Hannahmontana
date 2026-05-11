@@ -350,3 +350,34 @@ main button[type="submit"]:hover {
     background-color: hsl(320, 100%, 75%);
     transform: scale(1.02);
 }
+
+.citat-knapp {
+    background-color: #ff8cda;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.citat-knapp:hover {
+    transform: scale(1.05);
+    background-color: #8a2be2;
+}
+
+#quote-section {
+    text-align: center;
+}
+
+#quote-display {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #8a2be2;
+    font-style: italic;
+    min-height: 30px;
+}
